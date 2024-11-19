@@ -21,6 +21,7 @@ public class Main {
                 }
                 out.write("\n".getBytes());
             }
+            scanner.close();
             out.close();
         } catch (IOException e) {
             System.out.println("ERROR: Cannot open file.");

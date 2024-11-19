@@ -16,7 +16,7 @@ public class Pixel {
     // convert the current rgb values to gray scale and return
     // the current instance
     public Pixel toGrayScale() {
-        if (this.r != this.g) {
+        if (this.r != this.g || this.r != this.b) {
             int grayScaleValue = (int)((0.299 * this.r) + (0.587 * this.g) + (0.114 * this.b));
             this.r = this.g = this.b = grayScaleValue;
         }
