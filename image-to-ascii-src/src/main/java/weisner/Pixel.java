@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Pixel {
-    private final static List<Character> asciiMap = Arrays.asList('#', '8', 'O', 'o', ';', ':', '+', '-', '.');
+    private final static List<Character> asciiMap = Arrays.asList('.', '-', '+', ':', ';', 'o', 'O', '8', '#');
     private int r, g, b;
     // unpacks a packedRgb value from a BufferedImage
     public Pixel(int packedRgb) {
